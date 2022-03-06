@@ -26,7 +26,7 @@
         <div class="weui-cells weui-cells_form">
           <div class="weui-cell">
             <div class="weui-cell__bd">
-              <textarea class="weui-textarea" placeholder="选项1,选项2]" rows="3" id="options"></textarea>
+              <textarea class="weui-textarea" placeholder="选项1,选项2" rows="3" id="options"></textarea>
             </div>
           </div>
         </div>
@@ -45,9 +45,6 @@
         let name = $('#name').val();
         let imguri = $('#imguri').val();
         let options = $('#options').val();
-        console.log(name);
-        console.log(imguri);
-        console.log(options);
         if (name.length < 1 || imguri.length < 1 || options.length < 1){
             return;
         }

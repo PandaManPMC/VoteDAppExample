@@ -103,7 +103,6 @@
             return;
         }
         $.showLoading();
-        // myContract.methods.putVote(projectIndex,checked).send({from: connAccount,value: web3.utils.toWei('0.1', 'ether')}).then((result) => {
         myContract.methods.putVote(projectIndex,checked).send({from: ethereum.selectedAddress,value: web3.utils.toWei('0.1', 'ether')}).then((result) => {
             $.hideLoading();
             console.log(result);

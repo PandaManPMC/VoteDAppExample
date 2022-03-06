@@ -15,7 +15,6 @@ $(function(){
 // 读取 jsonInterface
 function initMyContract(callback){
     $.getJSON('../data/vote.json', function(res){
-        // http://pdmfs.aboshe.cn/a0/a0/a6daczdub5492b7h.json
         jsonInterface = res.output.abi;
         web3 = new Web3(Web3.givenProvider || "https://rinkeby.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161");
         myContract = new web3.eth.Contract(jsonInterface, contractAddress);
